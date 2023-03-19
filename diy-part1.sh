@@ -21,6 +21,4 @@
 #echo '$a src-git kenzo https://github.com/kenzok8/openwrt-packages'>>feeds.conf.default
 #echo '$a src-git small https://github.com/kenzok8/small'>>feeds.conf.default
 sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-#sed -i '$a src-git OpenWrt-Actions https://github.com/OpenWrt-Actions/helloworld' feeds.conf.default
-#sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-app-jd-dailybonus' feeds.conf.default
-sed -i '$a src-git nixonli https://github.com/nixonli/ddns-scripts_dnspod' feeds.conf.default
+sed -i '$a src-git zxilly https://github.com/Zxilly/UA2F' feeds.conf.default
