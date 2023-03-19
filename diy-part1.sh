@@ -16,7 +16,11 @@
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-git clone https://github.com/CHN-beta/rkp-ipid package/rkp-ipid
-git clone https://github.com/Zxilly/UA2F package/UA2F
-echo '$a src-git kenzo https://github.com/kenzok8/openwrt-packages'>>feeds.conf.default
-echo '$a src-git small https://github.com/kenzok8/small'>>feeds.conf.default
+#git clone https://github.com/CHN-beta/rkp-ipid package/rkp-ipid
+#git clone https://github.com/Zxilly/UA2F package/UA2F
+#echo '$a src-git kenzo https://github.com/kenzok8/openwrt-packages'>>feeds.conf.default
+#echo '$a src-git small https://github.com/kenzok8/small'>>feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git OpenWrt-Actions https://github.com/OpenWrt-Actions/helloworld' feeds.conf.default
+#sed -i '$a src-git jerrykuku https://github.com/jerrykuku/luci-app-jd-dailybonus' feeds.conf.default
+sed -i '$a src-git nixonli https://github.com/nixonli/ddns-scripts_dnspod' feeds.conf.default
