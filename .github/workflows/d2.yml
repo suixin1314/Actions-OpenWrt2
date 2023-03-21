@@ -62,7 +62,7 @@ jobs:
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
 
     - name: git clone
-      run: cd openwrt/package && git clone https://github.com/kenzok8/openwrt-packages && git clone https://github.com/xiaorouji/openwrt-passwall && git clone https://github.com/Zxilly/UA2F package/UA2F
+      run: cd openwrt/package && git clone https://github.com/kenzok8/openwrt-packages && git clone https://github.com/xiaorouji/openwrt-passwall && git clone https://github.com/Zxilly/UA2F
 
     - name: Load custom feeds
       run: |
