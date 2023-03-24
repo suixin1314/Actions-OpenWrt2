@@ -69,14 +69,15 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
+    - name: git clone
+      run: cd openwrt/package && git clone https://github.com/kenzok8/openwrt-packages && git clone https://github.com/xiaorouji/openwrt-passwall && git clone https://github.com/Zxilly/UA2F
+
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
-    - name: git clone
-      run: cd openwrt/package && git clone https://github.com/kenzok8/openwrt-packages && git clone https://github.com/xiaorouji/openwrt-passwall && git clone https://github.com/Zxilly/UA2F
 
     - name: Load custom configuration
       run: |
