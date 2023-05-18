@@ -80,7 +80,7 @@ jobs:
     - name: Update feeds
       run: |
         cd openwrt && ./scripts/feeds update -a
-        cd openwrt/package/feeds/helloworld
+        cd /openwrt/package/feeds/helloworld
         ln -s ../../../feeds/helloworld/shadowsocksr-libev/ shadowsocksr-libev
 
     - name: Install feeds
